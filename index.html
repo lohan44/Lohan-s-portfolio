@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lohan Fkaier - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <a class="nav-logo" href="#accueil">LF</a>
+        <ol class="nav-liens">
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#connexion">Me contacter</a></li>
+            <li><a href="#apropos">À propos</a></li>
+          <li><a href="images/cv-moi.pdf" download="Curriculum-Lohan-Fkaier.pdf">Curriculum vitae</a></li>
+        </ol>
+    </nav>
+
+    <header class="hero" id="accueil">
+        <img class="hero-image" src="images/callof.png" alt="image">
+        <div class="hero-texte">
+            <p class="hero-sous-titre">Design 3D et programmation</p>
+            <h1 class="hero-titre">Lohan Fkaier</h1>
+            <p class="hero-ecole">Étudiant à l'IIM Digital School de Nantes</p>
+            <a class="bouton" href="#projets">Voir mes projets</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="presentation" id="apropos">
+            <div class="colonne-photo">
+                <img class="photo" src="images/DGOU6645.png" alt="Portrait de Lohan Fkaier">
+                <div class="contacts">
+                    <p class="contacts-titre">Contacts</p>
+                    <a href="https://www.instagram.com/lhn__44/?utm_source=ig_web_button_share_sheet">Instagram</a>
+                    <a href="mailto:lohanfkaier44@gmail.com">lohanfkaier44@gmail.com</a>
+                    <a href="tel:0606060606">06 06 06 06 06</a>
+                </div>
+            </div>
+
+            <div class="bio">
+                <h2 class="titre-section">Biographie</h2>
+                <p>Je m'appelle Lohan Fkaier, j'ai 18 ans et je suis un jeune passionné de jeux vidéo, notamment de leur conception. Je suis actuellement étudiant à l'IIM Digital School de Nantes, où je développe mes compétences en design 3D et en programmation, avec pour objectif de devenir un professionnel du secteur.</p>
+                <p>Vous trouverez ici plusieurs de mes projets, certains finalisés et d'autres encore en cours de création.</p>
+            </div>
+
+            <aside class="competences">
+                <h2 class="titre-section">Compétences</h2>
+                <ul>
+                    <li>Blender</li>
+                    <li>Photoshop</li>
+                    <li>InDesign</li>
+                </ul>
+            </aside>
+        </section>
+
+        <section class="projets" id="projets">
+            <h2 class="titre-section titre-centre">Projets</h2>
+
+            <div class="carrousel" aria-roledescription="carrousel">
+                <button class="fleche fleche-gauche" type="button" aria-label="Projet précédent">&#10094;</button>
+
+                <div class="fenetre">
+                    <div class="piste">
+                        <figure class="slide">
+                            <img src="images/photomecha.png" alt="Robot 3D réalisé sous Blender">
+                            <figcaption><span class="etiquette">Blender</span>Robot 3D</figcaption>
+                        </figure>
+                        <figure class="slide">
+                            <img src="images/photounreal.png" alt="Projet réalisé sous Unreal">
+                            <figcaption><span class="etiquette">Unreal Engine</span>Projet Unreal</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <button class="fleche fleche-droite" type="button" aria-label="Projet suivant">&#10095;</button>
+                <div class="points"></div>
+            </div>
+        </section>
+
+        <section class="zone-connexion" id="connexion">
+            <h2 class="titre-section">Connexion</h2>
+
+            <form class="formulaire-connexion" id="formConnexion" novalidate>
+                <label for="email">Adresse mail</label>
+                <input type="text" id="email" name="email" placeholder="exemple@gmail.com">
+                <p class="erreur" id="erreurEmail"></p>
+
+                <label for="mdp">Mot de passe</label>
+                <input type="password" id="mdp" name="mdp" placeholder="Votre mot de passe">
+                <p class="erreur" id="erreurMdp"></p>
+
+                <button class="bouton" type="submit">Se connecter</button>
+                <p class="succes" id="messageSucces"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="watermark-grand">LF</p>
+        <div class="footer-contenu">
+            <p class="footer-nom">Lohan Fkaier</p>
+            <div class="footer-contacts">
+                <a href="https://www.instagram.com/lhn__44/?utm_source=ig_web_button_share_sheet">Instagram</a>
+                <a href="mailto:lohanfkaier44@gmail.com">lohanfkaier44@gmail.com</a>
+                <a href="tel:0606060606">06 06 06 06 06</a>
+            </div>
+            <p class="watermark">© 2026 Lohan Fkaier. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
